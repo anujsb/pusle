@@ -39,7 +39,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -64,7 +63,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <Link rel="apple-touch-icon" href="/icon-192x192.png" />
+        {/* <link rel="apple-touch-icon" href="/icon-192x192.png" /> */}
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
       </head>
