@@ -3,8 +3,8 @@ const CACHE_NAME = 'heartbeat-widget-v1';
 const STATIC_CACHE_URLS = [
   '/',
   '/manifest.json',
-  '/icon-192x192.png',
-  '/icon-512x512.png'
+  '/HeartIcon.png',
+  '/HeartIcon.png'
 ];
 
 // Install event - cache static assets
@@ -53,8 +53,8 @@ self.addEventListener('sync', (event) => {
 self.addEventListener('push', (event) => {
   const options = {
     body: 'Your partner sent you a heartbeat 💓',
-    icon: '/icon-192x192.png',
-    badge: '/icon-192x192.png',
+    icon: '/HeartIcon.png',
+    badge: '/HeartIcon.png',
     tag: 'heartbeat',
     vibrate: [200, 100, 200],
     silent: false,
